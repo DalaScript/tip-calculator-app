@@ -90,6 +90,7 @@ main {
   position: absolute;
   top: 16.87px;
   left: 19.26px;
+  pointer-events: none;
 }
 .splitter__form-group-input {
   padding: 6px 17px 6px 0;
@@ -282,6 +283,7 @@ main {
     width: 117px;
   }
   .splitter__amount-container {
+    margin: 0;
     padding: 40px;
     height: 100%;
     justify-content: space-between;
