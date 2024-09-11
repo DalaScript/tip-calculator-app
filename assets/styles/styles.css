@@ -225,16 +225,20 @@ main {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
+  pointer-events: none;
+}
+.splitter__reset-btn::placeholder {
   color: #00474B;
   mix-blend-mode: normal;
   opacity: 0.35;
-  pointer-events: none;
 }
 .splitter__reset-btn--active {
   pointer-events: auto;
-  opacity: 1;
   background-color: #26C2AE;
+}
+.splitter__reset-btn--active::placeholder {
   color: #00474B;
+  opacity: 1;
 }
 
 @media (hover: hover) and (pointer: fine) {

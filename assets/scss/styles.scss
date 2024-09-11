@@ -278,17 +278,23 @@ main {
         line-height: 30px;
         text-align: center;
 
-        color: $very-dark-cyan;
-        mix-blend-mode: normal;
-        opacity: 0.35;
-
         pointer-events: none;
+
+        &::placeholder {
+            color: $very-dark-cyan;
+            mix-blend-mode: normal;
+            opacity: 0.35;
+        }
+
 
         &--active {
             pointer-events: auto;
-            opacity: 1;
             background-color: #26C2AE;
-            color: #00474B;
+
+            &::placeholder {
+                color: #00474B;
+                opacity: 1;
+            }
         }
     }
 }
