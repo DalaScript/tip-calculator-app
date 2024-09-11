@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+  <main>
+    <img class="logo" src="./assets/images/logo.svg" width="86.66" height="53.14" alt="logo">
+    <article class="splitter">
+      <form class="splitter__payment-form">
+        <section class="splitter__form-group">
+          <label class="splitter__form-group-title" for="bill">Bill</label>
+          <p class="splitter__if-zero">Can’t be zero</p>
+          <div class="splitter__form-group-input-box">
+            <img class="splitter__form-icon" src="./assets/images/icon-dollar.svg" width="9.84" height="15.46" alt="dollar icon">
+            <input class="splitter__form-group-input" id="bill" type="number" placeholder="0" required>
+          </div>
+        </section>
+        <section class="splitter__form-group">
+          <label class="splitter__form-group-title splitter__form-group-title--margin-bottom">Select Tip %</label>
+          <section class="splitter__form-tips">
+            <div class="splitter__user-tip-btn">
+              <input id="five" class="splitter__user-tip-input" type="radio" name="tip" value="5">
+              <label class="splitter__user-tip-label" for="five">5%</label>
+            </div>
+            <div class="splitter__user-tip-btn">
+              <input id="ten" class="splitter__user-tip-input" type="radio" name="tip" value="10">
+              <label class="splitter__user-tip-label" for="ten">10%</label>
+            </div>
+            <div class="splitter__user-tip-btn">
+              <input id="fifteen" class="splitter__user-tip-input" type="radio" name="tip" value="15">
+              <label class="splitter__user-tip-label" for="fifteen">15%</label>
+            </div>
+            <div class="splitter__user-tip-btn">
+              <input id="twentyfive" class="splitter__user-tip-input" type="radio" name="tip" value="25">
+              <label class="splitter__user-tip-label" for="twenty">25%</label>
+            </div>
+            <div class="splitter__user-tip-btn">
+              <input id="fifty" class="splitter__user-tip-input" type="radio" name="tip" value="50">
+              <label class="splitter__user-tip-label" for="fifty">50%</label>
+            </div>
+            <div class="splitter__user-tip-btn">
+              <input id="custom-tip-input" class="splitter__tip-input" type="number" name="tip" placeholder="Custom">
+            </div>
+          </section>
+        </section>
+        <section class="splitter__form-group">
+          <p class="splitter__if-zero">Can’t be zero</p>
+          <label class="splitter__form-group-title" for="num-of-people">Number of People</label>
+          <div class="splitter__form-group-input-box">
+            <img class="splitter__form-icon" src="./assets/images/icon-person.svg" width="13" height="16" alt="person icon">
+            <input class="splitter__form-group-input" id="num-of-people" type="number" placeholder="0" required>
+          </div>
+        </section>
+      </form>
+      <section class="splitter__amount-container">
+        <section class="splitter__amount-inner">
+          <div class="splitter__amount-sum">
+            <div class="splitter__amount-text-content">
+              <h6 class="splitter__amount-title">Tip Amount</h6>
+              <p class="splitter__amount-subtitle">/ person</p>
+            </div>
+            <p class="splitter__sum-result">$<span id="tip-result">0.00</span></p>
+          </div>
+          <div class="splitter__amount-sum">
+            <div class="splitter__amount-text-content">
+              <h6 class="splitter__amount-title">Total</h6>
+              <p class="splitter__amount-subtitle">/ person</p>
+            </div>
+            <p class="splitter__sum-result">$<span id="sum-result">0.00</span></p>
+          </div>
+        </section>
+        <button class="splitter__reset-btn" id="reset-btn">Reset</button>
+      </section>
+    </article>
+  </main>
+  <script src="./assets/script/script.js"></script>
+</body>
+</html>
