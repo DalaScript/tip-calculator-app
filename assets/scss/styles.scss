@@ -279,22 +279,13 @@ main {
         text-align: center;
 
         pointer-events: none;
-
-        &::placeholder {
-            color: $very-dark-cyan;
-            mix-blend-mode: normal;
-            opacity: 0.35;
-        }
+        color: rgb(0, 71, 75, 0.35);
 
 
         &--active {
             pointer-events: auto;
             background-color: #26C2AE;
-
-            &::placeholder {
-                color: #00474B;
-                opacity: 1;
-            }
+            color: $very-dark-cyan;
         }
     }
 }
